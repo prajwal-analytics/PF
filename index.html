@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prajwal MR | Data Analyst</title>
+  <meta name="description" content="Prajwal MR – Business & Data Analyst. Power BI, SQL, Python, Excel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PM<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk →</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mob-drawer" id="mobDrawer">
+    <button class="mob-close" id="mobClose">✕</button>
+    <ul>
+      <li><a href="#about" class="mob-a">About</a></li>
+      <li><a href="#skills" class="mob-a">Skills</a></li>
+      <li><a href="#projects" class="mob-a">Projects</a></li>
+      <li><a href="#certifications" class="mob-a">Certs</a></li>
+      <li><a href="#contact" class="mob-a">Let's Talk</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="grid-bg"></div>
+    <div class="wavy-top"></div>
+
+    <div class="hero-wrap">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="sticker sticker-hi anim-pop">Hi there! 👋</div>
+        <h1 class="hero-h1">
+          I'm<br>
+          <span class="chalk">Prajwal</span><br>
+          <span class="chalk">MR.</span>
+        </h1>
+        <p class="hero-sub">
+          Based in <strong>Bengaluru, India</strong> — I'm a Business &amp; Data Analyst.
+          I love turning messy data into crisp dashboards, sharp insights, and decisions that matter.
+        </p>
+        <div class="hero-chips">
+          <span class="chip chip-yellow">📊 Power BI</span>
+          <span class="chip chip-blue">🐍 Python</span>
+          <span class="chip chip-pink">🗄️ SQL</span>
+          <span class="chip chip-green">📋 Excel</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-comic btn-yellow">View My Work</a>
+          <a href="#contact" class="btn-comic btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="snum">15+</span>
+            <span class="slabel">Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="snum">5+</span>
+            <span class="slabel">Tools</span>
+          </div>
+          <div class="stat-box">
+            <span class="snum">6</span>
+            <span class="slabel">Certs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right">
+        <div class="avatar-stage">
+          <div class="avatar-frame">
+            <div class="avatar-inner">
+              <svg viewBox="0 0 200 200" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                <!-- body -->
+                <ellipse cx="100" cy="165" rx="55" ry="38" fill="#1e1b4b" stroke="#111" stroke-width="3"/>
+                <!-- neck -->
+                <rect x="86" y="125" width="28" height="22" rx="6" fill="#f4a261" stroke="#111" stroke-width="2"/>
+                <!-- head -->
+                <ellipse cx="100" cy="105" rx="48" ry="50" fill="#f4a261" stroke="#111" stroke-width="3"/>
+                <!-- hair -->
+                <ellipse cx="100" cy="66" rx="48" ry="24" fill="#2d1b00" stroke="#111" stroke-width="2"/>
+                <ellipse cx="58"  cy="88" rx="14" ry="22" fill="#2d1b00" stroke="#111" stroke-width="2"/>
+                <ellipse cx="142" cy="88" rx="14" ry="22" fill="#2d1b00" stroke="#111" stroke-width="2"/>
+                <!-- eyes -->
+                <ellipse cx="83"  cy="105" rx="10" ry="11" fill="white" stroke="#111" stroke-width="2"/>
+                <ellipse cx="117" cy="105" rx="10" ry="11" fill="white" stroke="#111" stroke-width="2"/>
+                <circle cx="86"  cy="107" r="5" fill="#111"/>
+                <circle cx="120" cy="107" r="5" fill="#111"/>
+                <circle cx="88"  cy="104" r="2" fill="white"/>
+                <circle cx="122" cy="104" r="2" fill="white"/>
+                <!-- glasses -->
+                <rect x="72" y="95" width="22" height="20" rx="5" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+                <rect x="106" y="95" width="22" height="20" rx="5" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+                <line x1="94" y1="105" x2="106" y2="105" stroke="#f59e0b" stroke-width="2.5"/>
+                <line x1="70" y1="105" x2="62" y2="102" stroke="#f59e0b" stroke-width="2.5"/>
+                <line x1="128" y1="105" x2="136" y2="102" stroke="#f59e0b" stroke-width="2.5"/>
+                <!-- eyebrows -->
+                <path d="M73 93 Q83 88 93 93" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M107 93 Q117 88 127 93" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <!-- beard -->
+                <ellipse cx="100" cy="140" rx="36" ry="16" fill="#3d2200" stroke="#111" stroke-width="2"/>
+                <!-- smile -->
+                <path d="M88 125 Q100 135 112 125" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <!-- ears -->
+                <ellipse cx="52" cy="108" rx="7" ry="9" fill="#f4a261" stroke="#111" stroke-width="2"/>
+                <ellipse cx="148" cy="108" rx="7" ry="9" fill="#f4a261" stroke="#111" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <!-- floating stickers around avatar -->
+          <div class="float-sticker fs-code anim-float1">&lt;/&gt;</div>
+          <div class="float-sticker fs-chart anim-float2">📊</div>
+          <div class="float-sticker fs-ninja anim-float3">Data Ninja</div>
+          <div class="float-sticker fs-sql anim-float1" style="animation-delay:-1s">SQL</div>
+          <div class="float-sticker fs-py anim-float2" style="animation-delay:-2s">🐍</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wavy-bot"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="grid-bg"></div>
+    <div class="section-label-wrap">
+      <div class="section-label">ABOUT</div>
+    </div>
+    <div class="about-wrap container">
+      <div class="about-card comic-card reveal">
+        <p class="about-p">
+          Highly motivated and detail-obsessed analyst with a passion for
+          <span class="hl hl-yellow">turning raw data into decisions</span>.
+          I've worked across industries solving business problems with
+          <span class="hl hl-blue">SQL, Python, Power BI, and Excel</span>.
+        </p>
+        <p class="about-p">
+          My superpower? I bridge the gap between
+          <span class="hl hl-pink">technical depth</span> and
+          <span class="hl hl-green">business clarity</span> —
+          so stakeholders actually understand (and act on) the numbers.
+        </p>
+        <p class="about-p">
+          I believe every dataset has a story waiting to be told. My job is to
+          <span class="hl hl-yellow">find it, frame it, and present it</span>
+          in a way that drives real impact.
+        </p>
+        <div class="about-traits">
+          <span class="trait">🧠 Analytical Thinker</span>
+          <span class="trait">📖 Data Storyteller</span>
+          <span class="trait">⚡ Fast Learner</span>
+          <span class="trait">🎯 Detail-Oriented</span>
+          <span class="trait">🤝 Team Player</span>
+        </div>
+      </div>
+      <div class="about-side reveal">
+        <div class="postit postit-yellow">
+          <strong>📍 Location</strong>
+          Bengaluru, Karnataka, India
+        </div>
+        <div class="postit postit-blue">
+          <strong>💼 Status</strong>
+          Open to opportunities ✅
+        </div>
+        <div class="postit postit-pink">
+          <strong>🎓 Education</strong>
+          B.E. / B.Tech (CS/IT)
+        </div>
+        <div class="postit postit-green">
+          <strong>🌐 Languages</strong>
+          English · Kannada · Hindi
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills">
+    <div class="grid-bg"></div>
+    <div class="section-label-wrap">
+      <div class="section-label">SKILLS</div>
+    </div>
+    <div class="container">
+      <div class="skills-row">
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#fbbf24">
+          <div class="skill-panel-icon">📊</div>
+          <h3 class="skill-panel-title">BI &amp; Visualization</h3>
+          <div class="skill-chips">
+            <span class="sk-chip">Power BI</span>
+            <span class="sk-chip">DAX</span>
+            <span class="sk-chip">Power Query</span>
+            <span class="sk-chip sk-hot">Tableau</span>
+            <span class="sk-chip">Looker Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#38bdf8">
+          <div class="skill-panel-icon">🗄️</div>
+          <h3 class="skill-panel-title">Databases &amp; SQL</h3>
+          <div class="skill-chips">
+            <span class="sk-chip sk-hot">SQL</span>
+            <span class="sk-chip">MySQL</span>
+            <span class="sk-chip">PostgreSQL</span>
+            <span class="sk-chip">Window Fns</span>
+            <span class="sk-chip">CTEs</span>
+          </div>
+        </div>
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#a78bfa">
+          <div class="skill-panel-icon">🐍</div>
+          <h3 class="skill-panel-title">Python</h3>
+          <div class="skill-chips">
+            <span class="sk-chip sk-hot">Pandas</span>
+            <span class="sk-chip">NumPy</span>
+            <span class="sk-chip">Matplotlib</span>
+            <span class="sk-chip">Seaborn</span>
+            <span class="sk-chip">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#34d399">
+          <div class="skill-panel-icon">📋</div>
+          <h3 class="skill-panel-title">Excel &amp; Spreadsheets</h3>
+          <div class="skill-chips">
+            <span class="sk-chip sk-hot">Excel</span>
+            <span class="sk-chip">Pivot Tables</span>
+            <span class="sk-chip">VLOOKUP</span>
+            <span class="sk-chip">Power Query</span>
+            <span class="sk-chip">Macros</span>
+          </div>
+        </div>
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#f472b6">
+          <div class="skill-panel-icon">📐</div>
+          <h3 class="skill-panel-title">Statistics &amp; Analytics</h3>
+          <div class="skill-chips">
+            <span class="sk-chip">Regression</span>
+            <span class="sk-chip">Hypothesis Testing</span>
+            <span class="sk-chip sk-hot">Forecasting</span>
+            <span class="sk-chip">Cohort Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-panel comic-card reveal" style="--top-color:#fb923c">
+          <div class="skill-panel-icon">🛠️</div>
+          <h3 class="skill-panel-title">Tools &amp; Platforms</h3>
+          <div class="skill-chips">
+            <span class="sk-chip">Git</span>
+            <span class="sk-chip sk-hot">Google Sheets</span>
+            <span class="sk-chip">Notion</span>
+            <span class="sk-chip">Jupyter</span>
+            <span class="sk-chip">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="grid-bg grid-dark"></div>
+    <div class="wavy-top wavy-dark"></div>
+    <div class="section-label-wrap">
+      <div class="section-label section-label-light">PROJECTS</div>
+    </div>
+    <div class="container">
+      <div class="projects-grid">
+
+        <div class="proj-card reveal" style="--pa:#fbbf24">
+          <div class="proj-num">01</div>
+          <div class="proj-tools">
+            <span class="pt">Power BI</span><span class="pt">DAX</span><span class="pt">SQL</span>
+          </div>
+          <h3 class="proj-title">Sales Performance Dashboard</h3>
+          <p class="proj-desc">End-to-end sales analytics dashboard tracking KPIs across regions, products, and time. Automated data refresh cut reporting time by 60%.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">60%</span><span class="pml">Time Saved</span></div>
+            <div class="pm"><span class="pmv">12</span><span class="pml">KPIs Tracked</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--pa:#34d399">
+          <div class="proj-num">02</div>
+          <div class="proj-tools">
+            <span class="pt">Python</span><span class="pt">Pandas</span><span class="pt">Sklearn</span>
+          </div>
+          <h3 class="proj-title">Customer Churn Analysis</h3>
+          <p class="proj-desc">Predictive churn model on 50K+ customers using behavioral features. Identified high-risk segments and delivered actionable retention recommendations.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">50K+</span><span class="pml">Customers</span></div>
+            <div class="pm"><span class="pmv">82%</span><span class="pml">Accuracy</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--pa:#38bdf8">
+          <div class="proj-num">03</div>
+          <div class="proj-tools">
+            <span class="pt">SQL</span><span class="pt">Excel</span><span class="pt">Power BI</span>
+          </div>
+          <h3 class="proj-title">Financial Reporting Suite</h3>
+          <p class="proj-desc">Automated monthly P&amp;L, balance sheet, and cash flow reports. Replaced 3 manual weekly reports with a single live dashboard saving 8hrs/month.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">3→1</span><span class="pml">Reports</span></div>
+            <div class="pm"><span class="pmv">8 hrs</span><span class="pml">Saved/Month</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--pa:#a78bfa">
+          <div class="proj-num">04</div>
+          <div class="proj-tools">
+            <span class="pt">Python</span><span class="pt">Seaborn</span><span class="pt">SQL</span>
+          </div>
+          <h3 class="proj-title">E-Commerce Trend Analysis</h3>
+          <p class="proj-desc">Deep-dive EDA on product performance, seasonal patterns, and customer segments across 1M+ rows. Uncovered 3 high-revenue untapped segments.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">1M+</span><span class="pml">Rows Analyzed</span></div>
+            <div class="pm"><span class="pmv">3</span><span class="pml">New Segments</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--pa:#f472b6">
+          <div class="proj-num">05</div>
+          <div class="proj-tools">
+            <span class="pt">Excel</span><span class="pt">Power Query</span>
+          </div>
+          <h3 class="proj-title">Supply Chain Optimization</h3>
+          <p class="proj-desc">Inventory forecasting model with dynamic reorder alerts. Reduced stockouts by 40% and cut excess inventory cost by 25% within a quarter.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">40%</span><span class="pml">Fewer Stockouts</span></div>
+            <div class="pm"><span class="pmv">25%</span><span class="pml">Cost Reduced</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--pa:#fb923c">
+          <div class="proj-num">06</div>
+          <div class="proj-tools">
+            <span class="pt">Python</span><span class="pt">Matplotlib</span><span class="pt">SQL</span>
+          </div>
+          <h3 class="proj-title">HR Analytics Dashboard</h3>
+          <p class="proj-desc">People analytics covering attrition, headcount trends, and performance scoring. Helped HR leadership pinpoint top flight-risk departments in days.</p>
+          <div class="proj-metrics">
+            <div class="pm"><span class="pmv">5</span><span class="pml">Departments</span></div>
+            <div class="pm"><span class="pmv">Zero</span><span class="pml">Code For Users</span></div>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="plink">View Project →</a>
+            <a href="#" class="plink plink-gh">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="wavy-bot wavy-dark-bot"></div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications">
+    <div class="grid-bg"></div>
+    <div class="section-label-wrap">
+      <div class="section-label">CERTIFICATIONS</div>
+    </div>
+    <div class="container">
+      <div class="certs-grid">
+
+        <div class="cert-card comic-card reveal" style="--ca:#fbbf24">
+          <div class="cert-emoji">📊</div>
+          <div class="cert-body">
+            <h4>Microsoft Power BI Data Analyst</h4>
+            <span class="cert-iss">Microsoft · PL-300</span>
+            <span class="cert-yr">2024</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card comic-card reveal" style="--ca:#38bdf8">
+          <div class="cert-emoji">🐍</div>
+          <div class="cert-body">
+            <h4>Python for Data Science &amp; AI</h4>
+            <span class="cert-iss">IBM · Coursera</span>
+            <span class="cert-yr">2023</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card comic-card reveal" style="--ca:#34d399">
+          <div class="cert-emoji">🗄️</div>
+          <div class="cert-body">
+            <h4>SQL for Data Science</h4>
+            <span class="cert-iss">UC Davis · Coursera</span>
+            <span class="cert-yr">2023</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card comic-card reveal" style="--ca:#a78bfa">
+          <div class="cert-emoji">📈</div>
+          <div class="cert-body">
+            <h4>Google Data Analytics</h4>
+            <span class="cert-iss">Google · Coursera</span>
+            <span class="cert-yr">2023</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card comic-card reveal" style="--ca:#f472b6">
+          <div class="cert-emoji">🎓</div>
+          <div class="cert-body">
+            <h4>Business Analytics Specialization</h4>
+            <span class="cert-iss">Wharton · Coursera</span>
+            <span class="cert-yr">2022</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card comic-card reveal" style="--ca:#fb923c">
+          <div class="cert-emoji">✅</div>
+          <div class="cert-body">
+            <h4>Excel Skills for Business</h4>
+            <span class="cert-iss">Macquarie · Coursera</span>
+            <span class="cert-yr">2022</span>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="grid-bg"></div>
+    <div class="section-label-wrap">
+      <div class="section-label">GET IN TOUCH</div>
+    </div>
+    <div class="container">
+      <p class="contact-sub reveal">Let's build something amazing together 🚀</p>
+      <div class="contact-grid">
+
+        <!-- Postit socials -->
+        <div class="contact-postits reveal">
+          <a href="https://linkedin.com" target="_blank" class="big-postit bp-blue">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com" target="_blank" class="big-postit bp-yellow">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="big-postit bp-pink">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 0C5.36 0 0 5.36 0 12s5.36 12 11.99 12C18.63 24 24 18.64 24 12S18.63 0 11.99 0zm4.91 7.6c-.29 3.11-1.56 10.67-2.2 14.15-.27 1.47-.81 1.97-1.33 2.02-1.12.1-1.98-.74-3.06-1.45-1.7-1.12-2.67-1.82-4.32-2.91-1.91-1.26-.67-1.95.42-3.08.28-.3 5.26-4.82 5.36-5.23.01-.05.01-.24-.09-.34-.1-.1-.26-.07-.37-.04-.16.04-2.66 1.69-7.51 4.97-.71.49-1.35.72-1.93.71-.64-.01-1.86-.36-2.77-.66-1.12-.37-2-.56-1.93-1.18.04-.32.49-.65 1.36-.99 5.31-2.31 8.86-3.84 10.62-4.57 5.06-2.1 6.11-2.47 6.8-2.48.15 0 .49.04.71.22.19.15.24.35.26.5-.01.14-.01.28-.02.45z"/></svg>
+            <span>Telegram</span>
+          </a>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form comic-card">
+            <h3 class="form-title">Send a message 📬</h3>
+            <div class="fg">
+              <label>Your Name</label>
+              <input type="text" placeholder="Jane Smith" required/>
+            </div>
+            <div class="fg">
+              <label>Email</label>
+              <input type="email" placeholder="jane@company.com" required/>
+            </div>
+            <div class="fg">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Tell me about your project…"></textarea>
+            </div>
+            <button type="submit" class="btn-comic btn-yellow full">Send Message ✉️</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">PM<span style="color:var(--yellow)">.</span></span>
+      <span class="footer-copy">© 2025 Prajwal MR · Crafted with ☕ &amp; data</span>
+      <a href="#hero" class="footer-up">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
